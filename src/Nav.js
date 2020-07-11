@@ -3,7 +3,7 @@ import {
     NavLink,
 } from 'react-router-dom';
 
-import { navItems } from './config';
+import { navItems } from './data';
 
 const Nav = () => {
     return (
