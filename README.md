@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Design Notes: FSJT - 7
+Extras:
+* User can perform a search via address bar or the form submitting
+* User gets welcomed in two main pages: '/' and '/search' upon design decisions
+* Nav buttons gets active styles using the benefit of NavLink, when a static category nav button click and user gets navigated to url successfully, regarding nav button will have a simple active style 
+so user will always have the idea of where navigated
+* A simple text-based loading indicator appears in two places
+    - in the App state (while fetching the data for static categories cats, dogs, computer)
+    - in the search state while user performing a custom search
+* If no matches found by a search, specific display gets rendered to inform user
+* A 404-like component gets rendered if user types to address bar something that app doesn't apply, including stating the url part that doesn't get matched
+
 ## Available Scripts
 
 In the project directory, you can run:
