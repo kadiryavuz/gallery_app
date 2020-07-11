@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * stateless NoResult component
+ * gets used where necessary when a search performed with no results
+ */
 const NoResult = () => {
     return (
         <div className="photo-container">

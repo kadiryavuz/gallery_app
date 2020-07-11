@@ -1,6 +1,12 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 
+/**
+ * stateless Search component 
+ * - remains in the page every time as a part of static layout rendered by the route mechanism
+ * - handles redirecting only to a conrolled route '/search/:text' when user submits the form with a search text value
+ */
+
 const Search = () => {
     const history = useHistory();
     const { useRef } = React;

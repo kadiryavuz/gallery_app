@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * stateless Loading indicator to be used where needed
+ */
 const Loading = () => {
 
     return (

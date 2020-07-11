@@ -1,6 +1,10 @@
 import React from 'react';
 import { useLocation } from "react-router-dom";
 
+/**
+ * stateless NotFound component to print no matching route with a typed url
+ * it states typed url part as a user-friendly message with the benefit of useLocation hook 
+ */
 const NotFound = () => {
     let location = useLocation();
 

@@ -1,3 +1,7 @@
+/**
+ * external data library to fetch static data to be used dynamically in the app
+ */
+
 //Static routes to be handled dynamically where needed
 export const navItems = [
     {

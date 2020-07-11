@@ -4,6 +4,17 @@ import PropTypes from "prop-types";
 import NoResult from './NoResult';
 import Loading from './Loading';
 
+
+/**
+ * stateles PhotoContainer component only to display fetched images 
+ * managed by props to enhance the view and display custom messages
+ * 
+ * @param {images} PropTypes.array - photo list to be displayed
+ * @param {isLoading} PropTypes.bool - isLoading indicator to manage display in the component.
+ * @param {bySearch} PropTypes.bool - indicator to understand if the request is coming from search or not.
+ * @param {searchCategory} PropTypes.string - if component is rendered via a search result (not with a static category), 
+ * this prop has a value to display custom result header
+ */
 const PhotoContainer = (props) => {
 
     if(props.isLoading) {

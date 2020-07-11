@@ -15,9 +15,13 @@ import Welcome from './Welcome';
 import { apiKey } from './config';
 
 
-// import {apiKey} from './config.js';
-// sample call
-// https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=eebd3a8bcd4aba06925f3a6db18c3d68&tags=sunsets&per_page=24&format=json&nojsoncallback=1
+/**
+ * stateful App component
+ * - manages fetching photos fro three static routes when the app first loads
+ * - while fetching the data in the first load applies text-based Loading indicator by controlled rendering mechanism out of the routing side
+ * - renders routing elements with static layout and pages neccessary to display photos
+ * - applied routing mechanism also controls if there is an unmatched route then displays user-firendly message with the location info
+ */
 class App extends React.Component {
   constructor(props) {
     super(props);
