@@ -76,6 +76,7 @@ class App extends React.Component {
               <Route path="/computers">
                 <PhotoContainer images={computers} />
               </Route>
+              {/* In the below route, rendering a search route with a text urlparam is optional with ':text?' to handle a welcome search page for simple UX idea */}
               <Route path="/search/:text?">
                 <ResultContainer />
               </Route>
